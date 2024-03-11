@@ -59,3 +59,5 @@ Además de los ejemplos específicos de vulnerabilidades y sus soluciones, es im
 - **Logging y Manejo de Errores Seguro**: Asegúrate de que tu aplicación maneje errores de manera segura, evitando la exposición de información sensible en mensajes de error. Configura el logging para registrar eventos importantes, pero evita escribir información sensible como contraseñas o datos personales en los logs.
 
 - **Seguridad en el Transporte**: Para aplicaciones web y servicios, utiliza siempre HTTPS para proteger los datos en tránsito y considera el uso de HSTS (HTTP Strict Transport Security) para reforzar esta práctica.
+
+  (c) byteStorm Team 2024
