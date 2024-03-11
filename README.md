@@ -44,3 +44,18 @@ Se anima a los desarrolladores a revisar estos ejemplos y aplicar las prácticas
 
 Las contribuciones son bienvenidas. Si deseas agregar más ejemplos o mejorar los existentes, siente libre de hacer un fork de este repositorio y enviar tus pull requests.
 
+## Consideraciones Generales de Seguridad
+
+Además de los ejemplos específicos de vulnerabilidades y sus soluciones, es importante tener en cuenta las siguientes prácticas generales de seguridad cuando se desarrolla en Java o cualquier otro lenguaje de programación:
+
+- **Principio de Menor Privilegio**: Otorga a tus aplicaciones y usuarios solo los permisos que necesitan para realizar sus tareas, minimizando el potencial de acceso no autorizado o daño en caso de compromiso.
+
+- **Seguridad por Diseño**: La seguridad debe ser una consideración desde el inicio del proyecto. Incorpora revisiones de seguridad en el ciclo de desarrollo y considera realizar pruebas de penetración para identificar y mitigar vulnerabilidades.
+
+- **Actualizaciones y Parches**: Mantén todas las dependencias de tu proyecto, incluyendo el JDK, librerías y frameworks, actualizadas con las últimas versiones para aprovechar las mejoras de seguridad y correcciones de vulnerabilidades.
+
+- **Uso de Herramientas de Análisis Estático de Código**: Herramientas como SonarQube, FindBugs o Checkmarx pueden ayudar a identificar problemas de seguridad en el código de manera automática. Integrar estas herramientas en tu proceso de CI/CD puede ayudar a mantener un alto nivel de calidad del código desde una perspectiva de seguridad.
+
+- **Logging y Manejo de Errores Seguro**: Asegúrate de que tu aplicación maneje errores de manera segura, evitando la exposición de información sensible en mensajes de error. Configura el logging para registrar eventos importantes, pero evita escribir información sensible como contraseñas o datos personales en los logs.
+
+- **Seguridad en el Transporte**: Para aplicaciones web y servicios, utiliza siempre HTTPS para proteger los datos en tránsito y considera el uso de HSTS (HTTP Strict Transport Security) para reforzar esta práctica.
